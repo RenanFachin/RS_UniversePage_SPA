@@ -1,0 +1,283 @@
+:root{
+    --ff-allPage: 'Roboto', sans-serif;
+
+    --fc-menuActive: #FFFFFF;
+    --fc-menu: #C4C4CC;
+
+    --fc-page: #E1E1E6;
+    --fc-pageButton: #FFFFFF;
+    --fc-pageButtonHover: #02799D;
+
+    --bg-buttonColor: #FFFFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+
+}
+
+nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-left: 72px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav ul li{
+    margin-left: 32px;
+    padding: 0 11px;
+}
+
+nav ul li a{
+    color: var(--fc-menu);
+    font-family: var(--ff-allPage);
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+
+nav ul li a.active{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--fc-menuActive);
+}
+
+.logo{
+    width: 50px;
+    height: 42px;
+}
+
+
+/* HOME PAGE */
+
+.homeBG{
+    background-image: url(/images/IMG_Home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: -1;
+}
+
+main#home{
+    width: 400px;
+    height: 132px;
+    margin: 280px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+main#home h1{
+    color: var(--fc-page);
+    font-size: 48px;
+    font-family: var(--ff-allPage);
+    font-weight: 700;
+    line-height: 60px;
+    width: 400px;
+    height: 60px;
+    text-align: center;
+}
+
+main#home p{
+    font-size: 14px;
+    line-height: 24px;
+    font-family: var(--ff-allPage);
+    color: var(--fc-pageButton);
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    width: 200px;
+    height: 52px;
+    padding: 12px 32px;
+    text-transform: uppercase;
+}
+
+main#home p:hover{
+    color: var(--fc-pageButtonHover);
+    background-color: var(--bg-buttonColor);
+    cursor: pointer;
+}
+
+
+/* UNIVERSE PAGE*/
+.universeBG{
+    background-image: url(/images/IMG_theUniverse.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: -1;
+}
+
+
+main#universe{
+    width: 648px;
+    height: 279px;
+    color: var(--fc-page);
+    font-family: var(--ff-allPage);
+    margin-left: 102px;
+    margin-top: 180px;
+}
+
+main#universe h1{
+    width: 236px;
+    height: 60px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 16px;
+}
+
+main#universe p{
+    width: 648px;
+    height: 203px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+
+/* EXPLORE PAGE*/
+
+.exploreBG{
+    background-image: url(/images/IMG_explore.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: -1;
+}
+
+main#explore{
+    width: 648px;
+    height: 279px;
+    color: var(--fc-page);
+    font-family: var(--ff-allPage);
+    margin-left: 102px;
+    margin-top: 180px;
+}
+
+main#explore h1{
+    width: 236px;
+    height: 60px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 16px;
+}
+
+main#explore p{
+    width: 648px;
+    height: 203px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+
+/* ERROR PAGE */
+.a404{
+    background-image: url(/images/IMG_explore.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: -1;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--ff-allPage);
+    color: var(--fc-menuActive);
+    filter: saturate(0.7);
+}
+
+.a404 section {
+    width: 800px;
+    height: 300px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.a404 h1{
+    font-size: 150px;
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+
+.a404 p{
+    font-size: 28px;
+    font-weight: 200;
+}
+
+.a404 p span{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+/*FAZER UM JAVASCRIPT DISSO*/
+.banner
+{
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 10rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: -1;
+}
+
+.banner .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
